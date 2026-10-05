@@ -1,145 +1,21 @@
 /// Mock data for PlantHub Bangladesh UI prototyping
 /// All data is static/dummy — replace with real API calls in production.
 
-class MockPlant {
-  final String id;
-  final String name;
-  final String nameBn;
-  final String imageUrl;
-  final double price;
-  final double? originalPrice;
-  final String nurseryName;
-  final bool nurseryVerified;
-  final bool nurseryPremium;
-  final double rating;
-  final int reviewCount;
-  final int sold;
-  final String category;
-  final bool inWishlist;
-  final String careLevel;
-  final String sunlight;
-  final String water;
+import '../../features/marketplace/models/plant_model.dart';
+import '../../features/nursery/models/nursery_model.dart';
+import '../../features/consultation/models/expert_model.dart';
+import '../../features/orders/models/order_model.dart';
+import '../../features/knowledge_hub/models/article_model.dart';
 
-  const MockPlant({
-    required this.id,
-    required this.name,
-    required this.nameBn,
-    required this.imageUrl,
-    required this.price,
-    this.originalPrice,
-    required this.nurseryName,
-    this.nurseryVerified = false,
-    this.nurseryPremium = false,
-    required this.rating,
-    required this.reviewCount,
-    required this.sold,
-    required this.category,
-    this.inWishlist = false,
-    required this.careLevel,
-    required this.sunlight,
-    required this.water,
-  });
-}
+export '../../features/marketplace/models/plant_model.dart';
+export '../../features/nursery/models/nursery_model.dart';
+export '../../features/consultation/models/expert_model.dart';
+export '../../features/orders/models/order_model.dart';
+export '../../features/knowledge_hub/models/article_model.dart';
 
-class MockNursery {
-  final String id;
-  final String name;
-  final String location;
-  final String imageUrl;
-  final String coverUrl;
-  final double rating;
-  final int reviewCount;
-  final int productCount;
-  final bool verified;
-  final bool premium;
-  final String description;
 
-  const MockNursery({
-    required this.id,
-    required this.name,
-    required this.location,
-    required this.imageUrl,
-    required this.coverUrl,
-    required this.rating,
-    required this.reviewCount,
-    required this.productCount,
-    required this.verified,
-    required this.premium,
-    required this.description,
-  });
-}
 
-class MockExpert {
-  final String id;
-  final String name;
-  final String title;
-  final String imageUrl;
-  final double rating;
-  final int consultations;
-  final String specialty;
-  final int pricePerSession;
-  final bool available;
-  final List<String> skills;
 
-  const MockExpert({
-    required this.id,
-    required this.name,
-    required this.title,
-    required this.imageUrl,
-    required this.rating,
-    required this.consultations,
-    required this.specialty,
-    required this.pricePerSession,
-    required this.available,
-    required this.skills,
-  });
-}
-
-class MockOrder {
-  final String id;
-  final String plantName;
-  final String plantImage;
-  final int quantity;
-  final double total;
-  final String status;
-  final String nurseryName;
-  final DateTime date;
-
-  const MockOrder({
-    required this.id,
-    required this.plantName,
-    required this.plantImage,
-    required this.quantity,
-    required this.total,
-    required this.status,
-    required this.nurseryName,
-    required this.date,
-  });
-}
-
-class MockArticle {
-  final String id;
-  final String title;
-  final String titleBn;
-  final String imageUrl;
-  final String category;
-  final String author;
-  final String readTime;
-  final DateTime date;
-  final int views;
-
-  const MockArticle({
-    required this.id,
-    required this.title,
-    required this.titleBn,
-    required this.imageUrl,
-    required this.category,
-    required this.author,
-    required this.readTime,
-    required this.date,
-    required this.views,
-  });
-}
 
 abstract class MockData {
   // ── Unsplash plant image URLs ─────────────────────────────────────────────────

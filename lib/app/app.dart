@@ -2,29 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../core/theme/app_theme.dart';
 import '../providers/providers.dart';
-import '../features/auth/splash_screen.dart';
-import '../features/auth/onboarding_screen.dart';
-import '../features/auth/login_screen.dart';
-import '../features/auth/register_screen.dart';
-import '../features/marketplace/home_screen.dart';
-import '../features/marketplace/explore_screen.dart';
-import '../features/marketplace/product_detail_screen.dart';
-import '../features/marketplace/wishlist_screen.dart';
-import '../features/marketplace/cart_screen.dart';
-import '../features/orders/order_list_screen.dart';
-import '../features/orders/order_detail_screen.dart';
-import '../features/nursery/nursery_profile_screen.dart';
-import '../features/nursery/dashboard/nursery_dashboard_screen.dart';
-import '../features/nursery/dashboard/product_management_screen.dart';
-import '../features/nursery/dashboard/inventory_screen.dart';
-import '../features/nursery/dashboard/analytics_screen.dart';
-import '../features/consultation/expert_list_screen.dart';
-import '../features/consultation/expert_profile_screen.dart';
-import '../features/consultation/book_consultation_screen.dart';
-import '../features/knowledge_hub/knowledge_hub_screen.dart';
-import '../features/knowledge_hub/article_detail_screen.dart';
-import '../features/notifications/notifications_screen.dart';
-import '../features/profile/profile_screen.dart';
+import '../features/auth/pages/splash_page.dart';
+import '../features/auth/pages/onboarding_page.dart';
+import '../features/auth/pages/login_page.dart';
+import '../features/auth/pages/register_page.dart';
+import '../features/marketplace/pages/home_page.dart';
+import '../features/marketplace/pages/explore_page.dart';
+import '../features/marketplace/pages/product_detail_page.dart';
+import '../features/marketplace/pages/wishlist_page.dart';
+import '../features/cart/pages/cart_page.dart';
+import '../features/orders/pages/order_list_page.dart';
+import '../features/orders/pages/order_detail_page.dart';
+import '../features/nursery/pages/nursery_profile_page.dart';
+import '../features/nursery/pages/nursery_dashboard_page.dart';
+import '../features/nursery/pages/product_management_page.dart';
+import '../features/nursery/pages/inventory_page.dart';
+import '../features/nursery/pages/analytics_page.dart';
+import '../features/consultation/pages/expert_list_page.dart';
+import '../features/consultation/pages/expert_profile_page.dart';
+import '../features/consultation/pages/book_consultation_page.dart';
+import '../features/knowledge_hub/pages/knowledge_hub_page.dart';
+import '../features/knowledge_hub/pages/article_detail_page.dart';
+import '../features/notifications/pages/notifications_page.dart';
+import '../features/profile/pages/profile_page.dart';
 import 'routes.dart';
 
 class PlantHubApp extends StatelessWidget {
@@ -58,39 +58,40 @@ class PlantHubApp extends StatelessWidget {
             locale: localeProvider.currentLocale,
             initialRoute: AppRoutes.splash,
             routes: {
-              AppRoutes.splash: (_) => SplashScreen(onThemeToggle: themeProvider.toggleTheme),
-              AppRoutes.onboarding: (_) => const OnboardingScreen(),
-              AppRoutes.login: (_) => const LoginScreen(),
-              AppRoutes.register: (_) => const RegisterScreen(),
-              AppRoutes.home: (_) => HomeScreen(
+              AppRoutes.splash: (_) => SplashPage(onThemeToggle: themeProvider.toggleTheme),
+              AppRoutes.onboarding: (_) => const OnboardingPage(),
+              AppRoutes.login: (_) => const LoginPage(),
+              AppRoutes.register: (_) => const RegisterPage(),
+              AppRoutes.home: (_) => HomePage(
                     onThemeToggle: themeProvider.toggleTheme,
                     themeMode: themeProvider.themeMode,
                   ),
-          AppRoutes.explore: (_) => const ExploreScreen(),
-          AppRoutes.productDetail: (_) => const ProductDetailScreen(),
-          AppRoutes.wishlist: (_) => const WishlistScreen(),
-          AppRoutes.cart: (_) => const CartScreen(),
-          AppRoutes.orderList: (_) => const OrderListScreen(),
-          AppRoutes.orderDetail: (_) => const OrderDetailScreen(),
-          AppRoutes.nurseryProfile: (_) => const NurseryProfileScreen(),
-          AppRoutes.nurseryDashboard: (_) => NurseryDashboardScreen(
-                onThemeToggle: themeProvider.toggleTheme,
-                themeMode: themeProvider.themeMode,
-              ),
-          AppRoutes.nurseryProducts: (_) => const ProductManagementScreen(),
-          AppRoutes.nurseryInventory: (_) => const InventoryScreen(),
-          AppRoutes.nurseryAnalytics: (_) => const AnalyticsScreen(),
-          AppRoutes.expertList: (_) => const ExpertListScreen(),
-          AppRoutes.expertProfile: (_) => const ExpertProfileScreen(),
-          AppRoutes.bookConsultation: (_) => const BookConsultationScreen(),
-          AppRoutes.knowledgeHub: (_) => const KnowledgeHubScreen(),
-          AppRoutes.articleDetail: (_) => const ArticleDetailScreen(),
-          AppRoutes.notifications: (_) => const NotificationsScreen(),
-          AppRoutes.profile: (_) => const ProfileScreen(),
+              AppRoutes.explore: (_) => const ExplorePage(),
+              AppRoutes.productDetail: (_) => const ProductDetailPage(),
+              AppRoutes.wishlist: (_) => const WishlistPage(),
+              AppRoutes.cart: (_) => const CartPage(),
+              AppRoutes.orderList: (_) => const OrderListPage(),
+              AppRoutes.orderDetail: (_) => const OrderDetailPage(),
+              AppRoutes.nurseryProfile: (_) => const NurseryProfilePage(),
+              AppRoutes.nurseryDashboard: (_) => NurseryDashboardPage(
+                    onThemeToggle: themeProvider.toggleTheme,
+                    themeMode: themeProvider.themeMode,
+                  ),
+              AppRoutes.nurseryProducts: (_) => const ProductManagementPage(),
+              AppRoutes.nurseryInventory: (_) => const InventoryPage(),
+              AppRoutes.nurseryAnalytics: (_) => const AnalyticsPage(),
+              AppRoutes.expertList: (_) => const ExpertListPage(),
+              AppRoutes.expertProfile: (_) => const ExpertProfilePage(),
+              AppRoutes.bookConsultation: (_) => const BookConsultationPage(),
+              AppRoutes.knowledgeHub: (_) => const KnowledgeHubPage(),
+              AppRoutes.articleDetail: (_) => const ArticleDetailPage(),
+              AppRoutes.notifications: (_) => const NotificationsPage(),
+              AppRoutes.profile: (_) => const ProfilePage(),
+            },
+          );
         },
-      );
-    },
-  ),
-);
+      ),
+    );
+  }
 }
-}
+
