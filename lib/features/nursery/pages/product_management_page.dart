@@ -5,7 +5,8 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_text_styles.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../data/mock/mock_data.dart';
-import '../../../providers/marketplace_provider.dart';
+import '../../marketplace/provider/marketplace_provider.dart';
+
 
 class ProductManagementPage extends StatefulWidget {
   const ProductManagementPage({super.key});

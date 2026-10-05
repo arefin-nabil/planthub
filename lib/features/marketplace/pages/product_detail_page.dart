@@ -8,8 +8,11 @@ import '../../../core/widgets/star_rating.dart';
 import '../../../core/widgets/nursery_badge.dart';
 import '../../../core/widgets/growth_timeline_widget.dart';
 import '../../../data/mock/mock_data.dart';
-import '../../../providers/providers.dart';
+import '../../cart/provider/cart_provider.dart';
+import '../provider/wishlist_provider.dart';
 import '../../../app/routes.dart';
+
+
 
 class ProductDetailPage extends StatefulWidget {
   const ProductDetailPage({super.key});

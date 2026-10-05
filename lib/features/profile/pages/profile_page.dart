@@ -4,13 +4,14 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_text_styles.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/widgets/app_top_bar.dart';
-import '../../../providers/auth_provider.dart';
-import '../../../providers/cart_provider.dart';
-import '../../../providers/wishlist_provider.dart';
-import '../../../providers/order_provider.dart';
-import '../../../providers/theme_provider.dart';
-import '../../../providers/locale_provider.dart';
+import '../../auth/provider/auth_provider.dart';
+import '../../cart/provider/cart_provider.dart';
+import '../../marketplace/provider/wishlist_provider.dart';
+import '../../orders/provider/order_provider.dart';
+import '../../../core/theme/theme_provider.dart';
+import '../../../core/localization/locale_provider.dart';
 import '../../../app/routes.dart';
+
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});

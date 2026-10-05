@@ -3,7 +3,8 @@ import 'package:provider/provider.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_text_styles.dart';
 import '../../../core/constants/app_constants.dart';
-import '../../../providers/nursery_provider.dart';
+import '../provider/nursery_provider.dart';
+
 
 class InventoryPage extends StatelessWidget {
   const InventoryPage({super.key});

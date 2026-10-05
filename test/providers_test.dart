@@ -1,5 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:planthub/providers/providers.dart';
+import 'package:planthub/features/auth/provider/auth_provider.dart';
+import 'package:planthub/features/cart/provider/cart_provider.dart';
+import 'package:planthub/features/marketplace/provider/marketplace_provider.dart';
+import 'package:planthub/features/marketplace/provider/wishlist_provider.dart';
+import 'package:planthub/features/nursery/provider/nursery_provider.dart';
+
 import 'package:planthub/data/mock/mock_data.dart';
 
 void main() {

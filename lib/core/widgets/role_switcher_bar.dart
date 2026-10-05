@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_text_styles.dart';
-import '../../providers/auth_provider.dart';
+import '../../features/auth/provider/auth_provider.dart';
+
 import '../../app/routes.dart';
 
 class RoleSwitcherPill extends StatelessWidget {

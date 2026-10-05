@@ -7,8 +7,9 @@ import '../theme/app_colors.dart';
 import '../theme/app_text_styles.dart';
 import '../constants/app_constants.dart';
 import '../../data/mock/mock_data.dart';
-import '../../providers/wishlist_provider.dart';
-import '../../providers/cart_provider.dart';
+import '../../features/marketplace/provider/wishlist_provider.dart';
+import '../../features/cart/provider/cart_provider.dart';
+
 
 /// Premium plant product card used across marketplace & explore screens
 class PlantCard extends StatefulWidget {

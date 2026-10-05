@@ -5,7 +5,8 @@ import '../../../core/theme/app_text_styles.dart';
 import '../../../core/widgets/plant_card.dart';
 import '../../../core/widgets/faceted_filter_sheet.dart';
 import '../../../core/widgets/app_top_bar.dart';
-import '../../../providers/marketplace_provider.dart';
+import '../provider/marketplace_provider.dart';
+
 import '../../../app/routes.dart';
 
 class ExplorePage extends StatelessWidget {

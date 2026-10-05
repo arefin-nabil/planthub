@@ -7,7 +7,8 @@ import '../../../core/constants/app_constants.dart';
 import '../../../core/widgets/order_stepper.dart';
 import '../../../data/mock/mock_data.dart';
 import '../../../core/widgets/app_top_bar.dart';
-import '../../../providers/order_provider.dart';
+import '../provider/order_provider.dart';
+
 
 class OrderDetailPage extends StatelessWidget {
   const OrderDetailPage({super.key});

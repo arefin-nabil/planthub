@@ -13,9 +13,13 @@ import '../../../core/widgets/role_switcher_bar.dart';
 import '../../../core/widgets/faceted_filter_sheet.dart';
 import '../../../core/widgets/growth_timeline_widget.dart';
 import '../../../data/mock/mock_data.dart';
-import '../../../providers/providers.dart';
+import '../../../core/theme/theme_provider.dart';
+import '../../../core/localization/locale_provider.dart';
+import '../../cart/provider/cart_provider.dart';
+import '../provider/marketplace_provider.dart';
 import 'explore_page.dart';
 import 'wishlist_page.dart';
+
 import '../../cart/pages/cart_page.dart';
 import '../../profile/pages/profile_page.dart';
 import '../../ai_lens/pages/ai_lens_page.dart';

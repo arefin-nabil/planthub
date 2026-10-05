@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../core/theme/app_theme.dart';
-import '../providers/providers.dart';
+import '../core/theme/theme_provider.dart';
+import '../core/localization/locale_provider.dart';
+import '../features/auth/provider/auth_provider.dart';
+import '../features/cart/provider/cart_provider.dart';
+import '../features/marketplace/provider/marketplace_provider.dart';
+import '../features/marketplace/provider/wishlist_provider.dart';
+import '../features/orders/provider/order_provider.dart';
+import '../features/nursery/provider/nursery_provider.dart';
+import '../features/consultation/provider/consultation_provider.dart';
+
 import '../features/auth/pages/splash_page.dart';
 import '../features/auth/pages/onboarding_page.dart';
 import '../features/auth/pages/login_page.dart';
